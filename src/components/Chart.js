@@ -142,8 +142,9 @@ const Chart = () => {
       };
     });
   };
-
-  /* useEffect(() => {
+  
+ //chart data....
+    /* useEffect(() => {
         const getDateRange = () => {
             const { days, weeks, months, years } = chartConfig[filter];
             const endDate = new Date();
@@ -186,7 +187,7 @@ const Chart = () => {
         })}
       </ul>
       <ResponsiveContainer>
-        <AreaChart data={formatData(data)}>
+        <AreaChart className="p-3" data={formatData(data)}>
           <defs>
             <linearGradient id="chartColor" x1="0" y1="0" x2="0" y2="1">
               <stop

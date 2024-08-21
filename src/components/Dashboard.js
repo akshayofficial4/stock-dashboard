@@ -38,7 +38,7 @@ const Dashboard = () => {
 
   return (
     <div
-      className={`h-screen grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-8 md:grid-rows-7 xl:grid-rows-5 auto-rows-fr gap-6 p-10 font-quicksand ${
+      className={`2xl:h-screen xl:h-screen lg:h-screen md:h-screen h-full w-screen grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-8 md:grid-rows-7 xl:grid-rows-5 auto-rows-fr gap-6 p-10 font-quicksand  ${
         darkMode ? "bg-gray-900 text-gray-300" : "bg-neutral-100"
       }`}
     >
@@ -46,11 +46,11 @@ const Dashboard = () => {
         <Header name={stockDetails.name} />
       </div>
 
-      <div className="md:col-span-2 row-span-4">
+      <div className="md:col-span-2 row-span-4 md:pt-7 ">
         <Chart />
       </div>
 
-      <div>
+      <div className="md:pt-1 lg:pt-2 xl:pt-7">
         <Overview
           symbol={stockSymbol}
           price={quote.pc}
@@ -60,7 +60,7 @@ const Dashboard = () => {
         />
       </div>
 
-      <div className="row-span-6 xl:row-span-3 pt-3 flex flex-row ">
+      <div className="row-span-6 xl:row-span-3 pt-1 flex flex-row ">
         <Details details={stockDetails} />
       </div>
     </div>

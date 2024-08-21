@@ -9,7 +9,7 @@ const Overview = ({ symbol, price, change, changePercent, currency }) => {
       </span>
 
       <div className="w-full h-full flex items-center justify-around m-3 ">
-        <span className="text-2xl xl:text-4xl 2xl:text-4xl flex items-center">
+        <span className="text-2xl xl:text-2xl 2xl:text-4xl flex items-center">
           ${price}
           <span className="text-lg xl:text-xl 2xl:text-2xl text-neutral-400 m-2">
             {currency}
