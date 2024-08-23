@@ -27,9 +27,9 @@ const Details = ({ details }) => {
       >
         {Object.keys(detailsList).map((item) => {
           return (
-            <li key={item} className="flex-2 flex justify-between items-center">
+            <li key={item} className="flex-1 flex justify-between items-center">
               <span>{detailsList[item]}</span>
-              <span className="text-sm xl:font-bold 2xl:font-bold flex ">
+              <span className="text-sm xl:text-md 2xl:text-md flex ">
                 {item === "marketCapitalization"
                   ? `${convertMillionToBillion(details[item])}B`
                   : details[item]}
