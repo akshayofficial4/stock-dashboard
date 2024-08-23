@@ -186,7 +186,7 @@ const Chart = () => {
           );
         })}
       </ul>
-      <ResponsiveContainer>
+      <ResponsiveContainer className='mt-10 py-3'>
         <AreaChart className="p-3" data={formatData(data)}>
           <defs>
             <linearGradient id="chartColor" x1="0" y1="0" x2="0" y2="1">
